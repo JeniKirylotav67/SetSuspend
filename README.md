@@ -1,0 +1,2 @@
+# SetSuspend
+Requirement(s):   DllCall ; ; Author(s):        Bastel123 aka Sebastian ; Note(s):        If the system does not support hibernate use the standby mode       - ; ;=============================================================================== Func SetSuspend($mode=true,$force=true)     $result = DllCall("PowrProf.dll", "long", "SetSuspendState", "long",$mode, "long",$force, "long", false) EndFunc
